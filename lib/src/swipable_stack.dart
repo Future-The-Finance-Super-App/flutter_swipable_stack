@@ -834,6 +834,8 @@ class _SwipablePositioned extends StatelessWidget {
         return angle;
       case SwipeAnchor.bottom:
         return -angle;
+      case SwipeAnchor.none:
+        return 0;
       case null:
         return _swipingTop ? -angle : angle;
     }
